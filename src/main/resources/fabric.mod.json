@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "Tutorial Mod",
+	"description": "Tutorial Mod by J4kvb For Youtube",
+	"authors": [
+		"J4kvb!"
+	],
+	"contact": {
+		"homepage": "https://j4kvb.net",
+		"sources": "https://github.com/Tutorials-By-J4kvb/Fabric-tutorial-1.21.X"
+	},
+	"license": "MIT",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.j4kvb.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.j4kvb.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.j4kvb.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.17.2",
+		"minecraft": "~1.21.1",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
